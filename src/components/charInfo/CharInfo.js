@@ -30,11 +30,9 @@ class CharInfo extends Component {
     updateChar = () => {
         const { charId } = this.props;
         if (!charId) { return }
-
         this.onCharLoading()
 
-        this.marvelService
-            .getCharactrer(charId)
+        this.marvelService.getCharacter(charId)
             .then(this.onCharLoaded)
             .catch(this.onErorr)
     }
