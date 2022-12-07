@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState, useEffect } from 'react';
 import useMarvelService from '../../services/MarvelService';
 import Spinner from '../spinner/Spinner';
@@ -16,6 +17,7 @@ const ComicsList = () => {
 
     useEffect(() => {
         onRequest(offset, true);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const onRequest = (offset, initial) => {
