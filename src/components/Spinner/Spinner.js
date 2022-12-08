@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './Spiner.scss'
+import './Spinner.scss'
 
-export default function Spiner() {
+export default function Spinner() {
     return (
         <div class="loadingio-spinner-eclipse-egpa6ni2xa5">
             <div class="ldio-aapo3ux48ya">

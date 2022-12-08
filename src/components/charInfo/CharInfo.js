@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import Spiner from '../spinner/Spinner';
+
+import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import useMarvelService from '../../services/MarvelService';
 import Skeleton from '../skeleton/Skeleton';
@@ -11,10 +12,6 @@ const CharInfo = (props) => {
 
     const { loading, error, getCharacter, clearError } = useMarvelService();
 
-    useEffect(() => {
-        updateChar()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
     useEffect(() => {
         updateChar()
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -37,7 +34,7 @@ const CharInfo = (props) => {
 
     const skeleton = char || loading || error ? null : <Skeleton />;
     const errorMessage = error ? <ErrorMessage /> : undefined;
-    const spinner = !loading ? undefined : <Spiner />;
+    const spinner = !loading ? undefined : <Spinner />;
     const content = !(loading || error || !char) ? <View char={char} /> : undefined;
 
 
