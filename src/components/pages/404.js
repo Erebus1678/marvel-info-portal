@@ -8,7 +8,7 @@ const Page404 = () => {
             <p style={{ 'textAlign': "center", 'fontWeight': 'bold', 'fontSize': '24px' }}>Page doesn`t exist</p>
             <Link
                 className="button button__main button__long"
-                to='marvel-info-portal/'>
+                to='marvel-info-portal'>
                 <div className="inner">Go home</div>
             </Link>
         </div>

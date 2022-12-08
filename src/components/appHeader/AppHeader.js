@@ -14,7 +14,7 @@ const AppHeader = () => {
                 <ul>
                     <li><NavLink
                         style={({ isActive }) => ({ color: isActive ? '#9f0013' : 'inherit' })}
-                        to='marvel-info-portal/'>Characters</NavLink>
+                        to='marvel-info-portal'>Characters</NavLink>
                     </li>
                     /
                     <li><NavLink
